@@ -1,12 +1,11 @@
-name: Github Actions 실행시켜보기
-
+name: react deploy
 on:
   push:
     branches:
       - main
 
 jobs:
-  My-Deploy-Job:
+  My-deploy-Job:
     runs-on: ubuntu-latest
     env:
       REMOTE_DIR: /home/ubuntu/2025action
@@ -19,5 +18,5 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd ${{ env.REMOTE_DIR}}
+            cd ${{ env.REMOTE_DIR }}
             pwd
