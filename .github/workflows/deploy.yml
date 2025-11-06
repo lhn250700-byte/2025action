@@ -15,7 +15,7 @@ jobs:
       - name: ssh to ec2
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ screts.EC2_HOST }}
+          host: ${{ secrets.EC2_HOST }}
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
