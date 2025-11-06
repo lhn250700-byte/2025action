@@ -1,4 +1,4 @@
-name: react deploy
+name: react deployyyy
 on:
   push:
     branches:
